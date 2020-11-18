@@ -1,6 +1,7 @@
 package com.gamesys.api.table;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -9,6 +10,7 @@ import java.util.List;
 public class CellAccessTest {
 
     @Test
+    @DisplayName("Tables can provide a list of cell values in a row")
     public void testShouldProvideCellListOnOneRow() {
         Table<String> table = new Table<>(3, 2);
         table.setCellAt(0, 0, buildCell("Hello"));
@@ -21,6 +23,7 @@ public class CellAccessTest {
     }
 
     @Test
+    @DisplayName("Tables can provide a list of cell values in a column")
     public void testShouldProvideCellListOnOneColumn() {
         Table<String> table = new Table<>(3, 2);
         table.setCellAt(0, 0, buildCell("You"));
