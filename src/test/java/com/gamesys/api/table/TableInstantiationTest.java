@@ -10,7 +10,6 @@ public class TableInstantiationTest {
     @DisplayName("Table can be instantiated with one cell by default")
     public void testShouldInstantiateTableWithOneCellEmptyByDefault() {
         Table<Integer> table = new Table<>();
-        Table table = new Table();
 
         Assertions.assertEquals(1, table.getRows());
         Assertions.assertEquals(1, table.getColumns());
