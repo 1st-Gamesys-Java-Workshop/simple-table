@@ -1,11 +1,13 @@
 package com.gamesys.api.table;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class CellMutationTest {
 
     @Test
+    @DisplayName("Tables allow to mutate a cell on a given position")
     public void testShouldMutateCellAtGivenPosition() {
         Table table = new Table();
         Cell cell = new Cell();
@@ -19,6 +21,7 @@ public class CellMutationTest {
     }
 
     @Test
+    @DisplayName("Tables allow to mutate a cell value on a given position")
     public void testShouldMutateCellValueAtGivenPosition() {
         Table table = new Table();
         table.setCellValueAt(0, 0, 16L);
